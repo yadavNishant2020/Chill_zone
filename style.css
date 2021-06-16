@@ -1,0 +1,295 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  line-height: 0;
+}
+#abc{
+  width:100%;
+  height:100vh;
+  position:fixed;
+}
+#abc h4 {
+  position: absolute;
+  font-size: 2.5rem;
+  padding-left: 2rem;
+  font-family: "Ubuntu";
+}
+nav{
+  width: 100%;
+  position: sticky;
+
+}
+nav ul{
+  float: right;
+
+}
+nav ul li .Brand{
+  float: left;
+
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+  padding-top:1.5rem;
+  font-size: 1.5rem;
+  font-family: "Montserrat-Light";
+}
+nav ul li:hover{
+  background-color:#51C4D3;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 2rem;
+}
+/* bg video */
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 3rem;
+  font-weight: bold;
+}
+.nav-item{
+  padding-left: 9rem;
+  padding-right: 9rem;
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+
+}
+
+#home{
+  height: 100vh;;
+  width: calc(100vw - 1.15vw);
+}
+.brand {
+  margin: auto;
+  width: 50%;
+  padding: 10rem;
+}
+
+.brand h1 {
+  position: relative;
+  font-size: 10.5rem;
+  font-family: 'Prompt', sans-serif;
+  text-shadow: .2rem .2rem black;
+  letter-spacing: .5rem;
+  color: #51c4d3;
+  text-align: center;
+  clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  padding-top: 10rem;
+}
+
+.brand p {
+  position: relative;
+  font-size: 2.25rem;
+  text-align:center;
+  color: white;
+  text-shadow: .1rem .1rem black;
+  font-family: 'Playfair Display', serif;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 10rem;
+}
+
+.lady{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  z-index: 2;
+  line-height: 0;
+}
+/* Features section */
+#Features {
+  object-fit: fill;
+  height: calc(100vh);
+  background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);
+  opacity: 0.9;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+
+}
+
+.features img {
+  position: absolute;
+  padding-left: 70rem;
+  width: 118rem;
+}
+
+.cards {
+  margin-left: 20rem;
+  padding-top: 23rem;
+  font-size: 3.5rem;
+  font-family: 'Exo', sans-serif;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+ul {
+  margin-bottom: 50;
+}
+
+li {
+  padding-top: 2.5rem;
+}
+
+/* Game zone */
+#game {
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #1fc8db 74%);
+  opacity: 0.9;
+  display: flex;
+  z-index: -1;
+}
+
+.Games img {
+  width: 62rem;
+  padding-bottom: 2rem;
+  float: right;
+  padding-right: 30rem;
+  margin-left: 20rem;
+  padding-top: 10rem;
+}
+
+.Games h2 {
+  font-family: 'Odibee Sans', cursive;
+  color: #AEE0A1;
+  font-size: 20rem;
+  padding-top: 10rem;
+  display: inline-block;
+  padding-left: 7rem;
+}
+
+iframe {
+  width: 60rem;
+  height: 40rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  z-index: 1;
+}
+
+.g3{
+  width: 60rem;
+  height: 60rem;
+}
+
+/* Music  */
+.player h2{
+}
+#music{
+  height: 100vh;;
+  width: calc(100vw - 1.15vw);
+  margin: 0;
+  padding: 0;
+  background-image: url('msc(2).jpg');
+  background-size: cover;
+
+}
+
+#music h2{
+font-family: 'Permanent Marker', cursive;
+  color: #c0fefc;
+  font-size: 12rem;
+  padding-top: 7rem;
+  display: inline-block;
+  padding-left: 7rem;
+  align-self: center;
+
+
+
+}
+.cincopa_responsive_wrapper{
+  padding-top: 15rem;
+  padding-left: 17rem;
+  position: absolute;
+}
+.ms_back{
+
+
+}
+.ms{
+position: absolute;
+padding-top: 20rem;
+padding-left: 10rem;
+
+}
+
+#medi{
+height: 100vh;
+width: calc(100vw - 1.15vw);
+background-image: url('medi.jpg');
+background-size: cover;
+
+}
+.medit img{
+  height: 160vh;
+  width: calc(100vw - 1.15vw);
+  object-fit: cover;
+  opacity: 0.85;
+  z-index: -1;
+  position:absolute;
+}
+.medit h2{
+position: absolute;
+opacity: 1;
+font-size: 10rem;
+padding-top: 5rem;
+display: inline-block;
+padding-left: 7rem;
+align-self: center;
+z-index: 2;
+}
+
+.slider-box {
+    width     : 90%;
+    max-height: 90vh;
+    position  : relative;
+    overflow  : hidden;
+    margin    : 3rem auto;
+}
+
+#slider {
+    width     : 100%;
+    display   : inline-flex;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+#slider img {
+    width: 100%;
+}
+
+.indicators {
+    position : absolute;
+    left     : 50%;
+    bottom   : 20px;
+    transform: translateX(-50%);
+}
+
+.indicators span {
+    display      : inline-block;
+    width        : 15px;
+    height       : 15px;
+    border-radius: 50%;
+    background   : rgba(255, 255, 255, 0.5);
+    cursor       : pointer;
+}
+
+.active {
+    background: #ffff !important;
+}
