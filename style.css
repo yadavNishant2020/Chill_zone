@@ -3,10 +3,13 @@ html {
   font-size: 62.5%;
   line-height: 0;
 }
+*{
+  box-sizing: border-box;
+}
 #abc{
   width:100%;
   height:100vh;
-  position:fixed;
+  position:absolute;
 }
 #abc h4 {
   position: absolute;
@@ -16,7 +19,7 @@ html {
 }
 nav{
   width: 100%;
-  position: sticky;
+  position: ;
 
 }
 nav ul{
@@ -159,6 +162,7 @@ li {
   opacity: 0.9;
   display: flex;
   z-index: -1;
+
 }
 
 .Games img {
@@ -234,7 +238,7 @@ padding-left: 10rem;
 }
 
 #medi{
-height: 100vh;
+height: 110vh;
 width: calc(100vw - 1.15vw);
 background-image: url('medi.jpg');
 background-size: cover;
@@ -259,41 +263,57 @@ align-self: center;
 z-index: 2;
 }
 
-.slider-box {
-    width     : 90%;
-    max-height: 90vh;
-    position  : relative;
-    overflow  : hidden;
-    margin    : 3rem auto;
+.flip-card {
+  position:absolute;
+  background-color: transparent;
+  opacity: 1;
+  width: 90rem;
+  height: 55rem;
+  perspective: 1000px;
 }
 
-#slider {
-    width     : 100%;
-    display   : inline-flex;
-    transition: 0.7s;
-    z-index: 1;
+.flip-card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  top: 25rem;
+  left: 10rem;
 }
 
-#slider img {
-    width: 100%;
+.m1{
+  width: 100%;
+    height: 100%;
+    left: 0px;
+    object-fit: cover;
 }
 
-.indicators {
-    position : absolute;
-    left     : 50%;
-    bottom   : 20px;
-    transform: translateX(-50%);
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+
 }
 
-.indicators span {
-    display      : inline-block;
-    width        : 15px;
-    height       : 15px;
-    border-radius: 50%;
-    background   : rgba(255, 255, 255, 0.5);
-    cursor       : pointer;
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-.active {
-    background: #ffff !important;
+.flip-card-front img{
+
+}
+
+.flip-card-back {
+background-image: url('m2.jpg');
+background-repeat: no-repeat;
+background-size: contain;
+  color: white;
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
 }
