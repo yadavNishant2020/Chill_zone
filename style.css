@@ -112,6 +112,10 @@ video {
   align-items: center;
   z-index: 2;
   line-height: 0;
+  position: absolute;
+  bottom: 0px;
+    top: 350px;
+    padding-left: 80px;
 }
 /* Features section */
 #Features {
