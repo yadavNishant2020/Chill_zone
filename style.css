@@ -6,6 +6,13 @@ html {
 *{
   box-sizing: border-box;
 }
+section{
+  height: 100vh;
+
+}
+#game{
+  height:auto;
+}
 #abc{
   width:100%;
   height:100vh;
@@ -71,9 +78,11 @@ video {
 }
 
 #home{
-  height: 100vh;;
-  width: calc(100vw - 1.15vw);
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .brand {
   margin: auto;
   width: 50%;
@@ -81,7 +90,7 @@ video {
 }
 
 .brand h1 {
-  position: relative;
+  position: absolute;
   font-size: 10.5rem;
   font-family: 'Prompt', sans-serif;
   text-shadow: .2rem .2rem black;
@@ -92,11 +101,12 @@ video {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-  padding-top: 10rem;
+  padding-bottom: 20rem;
+  top: 20rem;
 }
 
 .brand p {
-  position: relative;
+  position: absolute;
   font-size: 2.25rem;
   text-align:center;
   color: white;
@@ -106,6 +116,8 @@ video {
   overflow: hidden;
   white-space: nowrap;
   padding-left: 10rem;
+  top: 33rem;
+
 }
 
 .lady{
@@ -123,7 +135,6 @@ video {
 /* Features section */
 #Features {
   object-fit: fill;
-  height: calc(100vh);
   background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);
   opacity: 0.9;
   margin: 0;
@@ -197,13 +208,8 @@ iframe {
 }
 
 /* Music  */
-.player h2{
-}
+
 #music{
-  height: 100vh;;
-  width: calc(100vw - 1.15vw);
-  margin: 0;
-  padding: 0;
   background-image: url('msc(2).jpg');
   background-size: cover;
 
@@ -226,13 +232,10 @@ font-family: 'Permanent Marker', cursive;
   padding-left: 17rem;
   position: absolute;
 }
-.ms_back{
 
-
-}
 .ms{
 position: absolute;
-padding-top: 20rem;
+padding-top: 15%;
 padding-left: 10rem;
 
 }
