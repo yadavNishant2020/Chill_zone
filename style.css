@@ -129,7 +129,7 @@ video {
   line-height: 0;
   position: absolute;
   bottom: 0px;
-    top: 350px;
+    top: 320px;
     padding-left: 80px;
 }
 /* Features section */
@@ -377,4 +377,15 @@ footer{
     width: 100%;
     margin-top: 20px;
     }
+} 
+@media screen and(max width: 480px ) {
+  .brand img{
+
+    display: none;
+
+  }
+  video {
+display: none;
+  }
+
 }
