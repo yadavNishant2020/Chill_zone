@@ -3,55 +3,11 @@ html {
   font-size: 62.5%;
   line-height: 0;
 }
-*{
+* {
   box-sizing: border-box;
 }
-section{
+section {
   height: 100vh;
-
-}
-#game{
-  height:auto;
-}
-#abc{
-  width:100%;
-  height:100vh;
-  position:absolute;
-}
-#abc h4 {
-  position: absolute;
-  font-size: 2.5rem;
-  padding-left: 2rem;
-  font-family: "Ubuntu";
-}
-nav{
-  width: 100%;
-  position: ;
-
-}
-nav ul{
-  float: right;
-
-}
-nav ul li .Brand{
-  float: left;
-
-}
-nav ul li{
-  list-style-type: none;
-  display: inline-block;
-  transition: 0.7s all;
-  padding-top:1.5rem;
-  font-size: 1.5rem;
-  font-family: "Montserrat-Light";
-}
-nav ul li:hover{
-  background-color:#51C4D3;
-}
-nav ul li a{
-  text-decoration: none;
-  color: #fff;
-  padding: 2rem;
 }
 /* bg video */
 video {
@@ -63,74 +19,121 @@ video {
   left: 0;
   z-index: -1;
 }
+@media only screen and (min-width: 600px) {
+  video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
 
-.navbar-brand{
+    z-index: -1;
+  }
+}
+#game {
+  height: auto;
+}
+#abc {
+  width: 100%;
+}
+#abc h4 {
+  font-size: 2.5rem;
+  padding-left: 2rem;
+  font-family: "Ubuntu";
+}
+
+/*navbar */
+nav {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 9999;
+}
+nav ul {
+  float: right;
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  transition: 0.7s all;
+  font-size: 2rem;
+  font-family: "Montserrat-Light";
+  height: 40px;
+  align-items: center;
+}
+nav ul li:hover {
+  background-color: #51c4d3;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 2rem;
+}
+
+.navbar-brand {
   font-family: "Ubuntu";
   font-size: 3rem;
   font-weight: bold;
 }
-.nav-item{
+.nav-item {
   padding-left: 9rem;
   padding-right: 9rem;
   font-size: 1.2rem;
   font-family: "Montserrat-Light";
-
 }
 
-#home{
-  display:flex;
+/*home section*/
+
+#home {
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .brand {
   margin: auto;
   width: 50%;
-  padding: 10rem;
+  padding-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .brand h1 {
-  position: absolute;
   font-size: 10.5rem;
-  font-family: 'Prompt', sans-serif;
-  text-shadow: .2rem .2rem black;
-  letter-spacing: .5rem;
+  font-family: "Prompt", sans-serif;
+  text-shadow: 0.2rem 0.2rem black;
+  letter-spacing: 0.5rem;
   color: #51c4d3;
   text-align: center;
   clear: both;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-  padding-bottom: 20rem;
-  top: 20rem;
+  white-space: nowrap;
 }
 
 .brand p {
-  position: absolute;
   font-size: 2.25rem;
-  text-align:center;
+  text-align: center;
   color: white;
-  text-shadow: .1rem .1rem black;
-  font-family: 'Playfair Display', serif;
-  display: inline-block;
-  overflow: hidden;
+  text-shadow: 0.1rem 0.1rem black;
+  font-family: "Playfair Display", serif;
   white-space: nowrap;
-  padding-left: 10rem;
-  top: 33rem;
-
 }
 
-.lady{
-  display: block;
+.lady {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   z-index: 2;
   line-height: 0;
-  position: absolute;
-  bottom: 0px;
-    top: 320px;
-    padding-left: 80px;
+}
+.lady img {
+  width: 600px;
 }
 /* Features section */
 #Features {
@@ -140,7 +143,6 @@ video {
   margin: 0;
   padding: 0;
   z-index: -1;
-
 }
 
 .features img {
@@ -153,17 +155,14 @@ video {
   margin-left: 20rem;
   padding-top: 23rem;
   font-size: 3.5rem;
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
   list-style-type: none;
   font-weight: bold;
 }
 
 ul {
   margin-bottom: 50;
-}
-
-li {
-  padding-top: 2.5rem;
+  height: 20px;
 }
 
 /* Game zone */
@@ -173,7 +172,6 @@ li {
   opacity: 0.9;
   display: flex;
   z-index: -1;
-
 }
 
 .Games img {
@@ -186,8 +184,8 @@ li {
 }
 
 .Games h2 {
-  font-family: 'Odibee Sans', cursive;
-  color: #AEE0A1;
+  font-family: "Odibee Sans", cursive;
+  color: #aee0a1;
   font-size: 20rem;
   padding-top: 10rem;
   display: inline-block;
@@ -202,72 +200,66 @@ iframe {
   z-index: 1;
 }
 
-.g3{
+.g3 {
   width: 60rem;
   height: 60rem;
 }
 
 /* Music  */
 
-#music{
-  background-image: url('msc(2).jpg');
+#music {
+  background-image: url("msc(2).jpg");
   background-size: cover;
-
 }
 
-#music h2{
-font-family: 'Permanent Marker', cursive;
+#music h2 {
+  font-family: "Permanent Marker", cursive;
   color: #c0fefc;
   font-size: 12rem;
   padding-top: 7rem;
   display: inline-block;
   padding-left: 7rem;
   align-self: center;
-
-
-
 }
-.cincopa_responsive_wrapper{
+.cincopa_responsive_wrapper {
   padding-top: 15rem;
   padding-left: 17rem;
   position: absolute;
 }
 
-.ms{
-position: absolute;
-padding-top: 15%;
-padding-left: 10rem;
-
+.ms {
+  position: absolute;
+  padding-top: 15%;
+  padding-left: 10rem;
 }
 
-#medi{
-height: 110vh;
-width: calc(100vw - 1.15vw);
-background-image: url('medi.jpg');
-background-size: cover;
-
+#medi {
+  height: 110vh;
+  width: calc(100vw - 1.15vw);
+  background-image: url("medi.jpg");
+  background-size: cover;
 }
-.medit img{
+.medit img {
   height: 160vh;
   width: calc(100vw - 1.15vw);
   object-fit: cover;
   opacity: 0.85;
   z-index: -1;
-  position:absolute;
+  position: absolute;
 }
-.medit h2{
-position: absolute;
-opacity: 1;
-font-size: 10rem;
-padding-top: 5rem;
-display: inline-block;
-padding-left: 7rem;
-align-self: center;
-z-index: 2;
+.medit h2 {
+  position: absolute;
+  opacity: 1;
+  font-size: 10rem;
+  padding-top: 5rem;
+  display: inline-block;
+  padding-left: 7rem;
+  align-self: center;
+  z-index: 2;
 }
 
 .flip-card {
-  position:absolute;
+  position: absolute;
   background-color: transparent;
   opacity: 1;
   width: 90rem;
@@ -286,19 +278,19 @@ z-index: 2;
   left: 10rem;
 }
 
-.m1{
+.m1 {
   width: 100%;
-    height: 100%;
-    left: 0px;
-    object-fit: cover;
+  height: 100%;
+  left: 0px;
+  object-fit: cover;
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -306,26 +298,21 @@ z-index: 2;
   backface-visibility: hidden;
 }
 
-.flip-card-front img{
-
-}
-
 .flip-card-back {
-background-image: url('m2.jpg');
-background-repeat: no-repeat;
-background-size: contain;
+  background-image: url("m2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
   color: white;
   transform: rotateY(180deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-footer{
-  background: #AF7AB7;
+footer {
+  background: #af7ab7;
   padding: 5px 0;
-
 }
 
-.footer-container{
+.footer-container {
   max-width: 1300px;
   margin: auto;
   padding: 0 20px;
@@ -335,57 +322,71 @@ footer{
   flex-wrap: wrap-reverse;
 }
 
-.logo{
+.logo {
   width: 180px;
 }
 
-.social-media{
+.social-media {
   margin: 20px 0;
 }
 
-.social-media a{
+.social-media a {
   color: #001a21;
   margin-right: 25px;
   font-size: 22px;
   text-decoration: none;
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
 
-.social-media a:hover{
-  color: #F7D5E5;
+.social-media a:hover {
+  color: #f7d5e5;
 }
 
-@media screen and (max-width:960px) {
-  .footer-container{
+@media screen and (max-width: 960px) {
+  .footer-container {
     max-width: 600px;
   }
-  .right-col{
+  .right-col {
     width: 100%;
     margin-bottom: 60px;
   }
 
-  .left-col{
+  .left-col {
     width: 100%;
     text-align: center;
   }
 }
 
-
-@media screen and (max-width:700px){
-  .btn{
+@media screen and (max-width: 700px) {
+  .btn {
     margin: 0;
     width: 100%;
     margin-top: 20px;
-    }
-} 
-@media screen and(max width: 480px ) {
-  .brand img{
-
-    display: none;
-
   }
+}
+@media screen and (max-width: 480px) {
   video {
-display: none;
+    width: auto;
   }
-
+  nav {
+    padding-left: 25vw;
+    position: fixed;
+  }
+  nav ul {
+    display: none;
+  }
+  .brand {
+    width: auto;
+    padding-top: 100px;
+  }
+  .brand h1 {
+    font-size: 4.5rem;
+    letter-spacing: 0.5rem;
+  }
+  .brand p {
+    font-size: 1.25rem;
+  }
+  .brand img {
+    width: 380px;
+  }
 }
