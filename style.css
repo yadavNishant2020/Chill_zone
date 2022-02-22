@@ -137,32 +137,35 @@ nav ul li a {
 }
 /* Features section */
 #Features {
-  object-fit: fill;
   background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);
   opacity: 0.9;
   margin: 0;
   padding: 0;
   z-index: -1;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-
+.features {
+  display: flex;
+}
 .features img {
-  position: absolute;
-  padding-left: 70rem;
-  width: 118rem;
+  width: 650px;
+  padding-left: 100px;
 }
 
 .cards {
-  margin-left: 20rem;
-  padding-top: 23rem;
   font-size: 3.5rem;
   font-family: "Exo", sans-serif;
   list-style-type: none;
   font-weight: bold;
+  line-height: 100px;
 }
 
 ul {
-  margin-bottom: 50;
-  height: 20px;
 }
 
 /* Game zone */
@@ -366,7 +369,6 @@ footer {
 }
 @media screen and (max-width: 480px) {
   video {
-    width: auto;
   }
   nav {
     padding-left: 25vw;
